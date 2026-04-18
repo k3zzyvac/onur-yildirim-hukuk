@@ -16,21 +16,21 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Malatya Avukat | Onur Yıldırım Hukuk & Danışmanlık",
-  description: "Malatya'da ceza, aile ve ticaret hukuku alanında uzman avukatlık hizmeti. Onur Yıldırım Hukuk & Danışmanlık ile haklarınızı profesyonelce savunun.",
-  keywords: ["Malatya Avukat", "Ceza Avukatı", "Aile Hukuku", "Ticaret Hukuku", "Onur Yıldırım", "Hukuk Danışmanlık"],
-  authors: [{ name: "Onur Yıldırım" }],
+  title: "Malatya Avukat | Vahap Solmazgül Hukuk & Danışmanlık",
+  description: "Malatya'da ceza, aile ve ticaret hukuku alanında uzman avukatlık hizmeti. Av. Vahap Solmazgül ile haklarınızı profesyonelce savunun.",
+  keywords: ["Malatya Avukat", "Ceza Avukatı", "Aile Hukuku", "Ticaret Hukuku", "Vahap Solmazgül", "Hukuk Danışmanlık"],
+  authors: [{ name: "Vahap Solmazgül" }],
   openGraph: {
-    title: "Malatya Avukat | Onur Yıldırım Hukuk & Danışmanlık",
+    title: "Malatya Avukat | Vahap Solmazgül Hukuk & Danışmanlık",
     description: "Uzman Avukatlık ve Danışmanlık Hizmetleri",
-    url: "https://onuryildirim.av.tr", // Placeholder
-    siteName: "Onur Yıldırım Hukuk",
+    url: "https://vahapsolmazgul.av.tr", 
+    siteName: "Vahap Solmazgül Hukuk",
     locale: "tr_TR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Malatya Avukat | Onur Yıldırım Hukuk & Danışmanlık",
+    title: "Malatya Avukat | Vahap Solmazgül Hukuk & Danışmanlık",
     description: "Malatya'da uzman avukatlık hizmeti.",
   },
 };
@@ -49,15 +49,18 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LegalService",
-              "name": "Onur Yıldırım Hukuk & Danışmanlık",
+              "name": "Vahap Solmazgül Hukuk & Danışmanlık",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Malatya",
+                "streetAddress": "Malatya Park Ofis, İnönü, Kat:3 Daire:18",
+                "addressLocality": "Yeşilyurt",
+                "addressRegion": "Malatya",
+                "postalCode": "44100",
                 "addressCountry": "TR"
               },
               "description": "Malatya'da ceza, aile ve ticaret hukuku alanında uzman avukatlık hizmeti.",
-              "url": "https://onuryildirim.av.tr",
-              "telephone": "+905000000000", // Placeholder
+              "url": "https://vahapsolmazgul.av.tr",
+              "telephone": "+905372148445",
               "priceRange": "$$"
             })
           }}
@@ -69,7 +72,7 @@ export default function RootLayout({
         
         {/* Floating WhatsApp CTA */}
         <a
-          href="https://wa.me/905000000000" // Placeholder
+          href="https://wa.me/905372148445"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 z-50 bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300"
@@ -81,5 +84,6 @@ export default function RootLayout({
         </a>
       </body>
     </html>
+
   );
 }
